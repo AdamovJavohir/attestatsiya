@@ -107,8 +107,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILE_DIRS = BASE_DIR / "static"
+STATIC_URL = '/static/'  # Bu URL'da statik fayllar ishlaydi
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Heroku kabi serverlarda fayllar shu papkada to‘planadi
+STATICFILES_DIRS = [BASE_DIR / 'static']  # Lokal tizimda qo‘shimcha statik fayllar manzili
+
 
 #media fayli uchun
 MEDIA_URL = "media/"
