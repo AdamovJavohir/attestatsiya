@@ -1,9 +1,9 @@
-from .models import AttastModel
+from .models import AttestModel
 from django import forms
 
 class AttestForm(forms.ModelForm):
     class Meta:
-        model = AttastModel
+        model = AttestModel
         fields = ["ism", "familiya", "tell"]
         widgets = {
             "ism": forms.TextInput(attrs={"class": "form_control"}),

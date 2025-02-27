@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class AttastModel(models.Model):
+class AttestModel(models.Model):
     ism = models.CharField(max_length=50)
     familiya = models.CharField(max_length=50)
     tell = models.PositiveIntegerField()
